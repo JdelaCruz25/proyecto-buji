@@ -49,7 +49,7 @@ footer{
 /* LE DOY EL MISMO ESTILO AL NAV Y AL FOOTER */
 nav, footer {
     font-family: 'Poppins', sans-serif;
-    background-color: #282E40;  
+    background-image: linear-gradient(to bottom, #161a24, #212635, #363e57);  
 }
 
 .menuHeader li a, .menuFooter li a {
@@ -78,7 +78,11 @@ nav, footer {
 .logo { /* TRABAJO CON EL LOGO */
     height: 13vw;
     width: 20vw;
-    
+}
+
+.logo:hover{
+    animation: pulse;
+    animation-duration: 1s;
 }
 
 
@@ -98,6 +102,7 @@ nav, footer {
 .titulosH {
     font-family: 'Roboto Slab', serif;
     display: inline-block;
+    color: #161a24;
 }
 
 .titulosH h1 { /* TITULO "LLORO" */
@@ -180,9 +185,9 @@ nav, footer {
 
 .musicaResponsiva, .cajaMusica {
     padding: 2vw;
-    border: 2px solid #1e2230;
+/*  border: 2px solid; */
     border-radius: 5vw;
-    background-color: #1e2230;
+    background-image: linear-gradient(to right, #212635, #363e57);  
 }
 
 .cicatrices, .sencillos{
@@ -248,13 +253,13 @@ nav, footer {
     line-height: 54%;
     font-family: 'Roboto Slab', serif;
     padding: 10vw 0vw 8vw 18vw;
-
+    color: #161a24;
 }
 
 .formulario {
     font-family: 'Roboto Slab', serif;
-    background-color: #1e2230;
-    border: 2px solid #1e2230;
+    background-image: linear-gradient(to right, #212635, #363e57);  
+/*  border: 2px solid; */
     border-radius: 5%;
     padding: 2%;
     margin: 2vw
@@ -381,7 +386,15 @@ nav, footer {
     }
 
     .menuHeader li {
+        padding: 1vw;
         list-style-type: none;
+    }
+
+    .menuHeader li:hover {
+        background-color: #212635; 
+
+        animation: pulse;
+        animation-duration: 1s;
     }
 
     .menuHeader li a { /* TAMAÑO LETRA NAV */
@@ -399,8 +412,15 @@ nav, footer {
 
 
 
-    /* INDEX */
+    #mainIndex, #mainSobreMi, #mainGaleria, #mainCanciones, #mainContacto {   
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+
+
+
     
+    /* INDEX */
     #mainIndex {
         margin: 3vw;
         display: flex;
@@ -440,7 +460,11 @@ nav, footer {
         height: 6vw;
         border-radius: 35em;
         margin-left: 10vw;
-    
+    }
+
+    .redesItems:hover{
+        animation: pulse;
+        animation-duration: 1s;
     }
 
     .presentacion iframe { /* VIDEO IFRAME */
@@ -488,7 +512,6 @@ nav, footer {
 
 
     /* MUSICA */
-
     #mainCanciones {
         width: 90vw;
         display: flex;
@@ -498,11 +521,16 @@ nav, footer {
         gap: 10vw;
         margin: 16vw 0vw 11.2vw 0vw;
     }
-
+    
     .cicatrices, .sencillos{
         padding: 0vw 2vw;
         font-size: 3.5vw;
         text-align: center;
+    }
+
+    .musicaResponsiva:hover {
+        animation: pulse;
+        animation-duration: 1s;
     }
 
     .cajaMusica li {
@@ -520,9 +548,16 @@ nav, footer {
         gap: 1vw;
     }  
 
+
+
     .fotos div img {
         padding: 0.5vw 0.5vw 5vw 0.5vw;
         width: 20vw; /* TAMAÑO DE LAS FOTOS */
+    }
+
+    .buji:hover {
+        animation: pulse;
+        animation-duration: 2s;
     }
 
 
@@ -570,6 +605,10 @@ nav, footer {
         font-size: 1.5vw;
     }
 
+    .botones input:hover {
+        animation: pulse;
+        animation-duration: 2s;
+    }
 
 
 
