@@ -125,6 +125,10 @@ button.navbar-toggler {
     text-align: center;
 }
 
+#itemsRedes {
+    width: 0vw; /* esto le quita el sobrante a etiqueta <a> */
+}
+
 .redesItems{
     width: 50vw;
     height: 15vw;
