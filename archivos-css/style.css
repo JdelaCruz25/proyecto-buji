@@ -55,6 +55,10 @@ nav, footer, .dropdown-menu {
     text-decoration: none;
 }
 
+.menuHeader li a:hover {
+    color: #798099;
+}
+
 
 
 /* --------------------
