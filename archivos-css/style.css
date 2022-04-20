@@ -189,8 +189,8 @@ button.navbar-toggler {
         MÚSICA 
 -------------------- */
 #mainCanciones {
-    width: 90vw;
-    margin: 10vw;
+    width: 80vw;
+    margin: 10vw 0vw;
     justify-self: center;
 }
 
