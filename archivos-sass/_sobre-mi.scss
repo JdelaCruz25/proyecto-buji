@@ -1,0 +1,113 @@
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        SOBRE MI 
+-------------------- */
+#mainSobreMi{
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.video {
+    video {
+        width: 90vw;
+    }
+}
+
+#nombreLucas{
+    z-index: 1;
+    margin: -20vw 0vw 8vw 2vw;
+    
+    h1 {
+        font-size: 15vw;
+        line-height: 8vw;
+    }
+}
+
+.sobreLucas {
+    p {
+        font-size: 5vw;
+        text-align: justify;
+
+        width: 90vw;
+        margin-bottom: 2vw;
+    }
+}
+
+
+/* -------------------- 
+    APTO TABLETS 
+-------------------- */
+@media screen and (min-width: $tamTablets) {
+
+    #mainSobreMi{
+        padding: 3vw;
+    }
+
+    #nombreLucas {
+        z-index: 1;
+        margin: -15.5vw 0vw 8vw 5vw;
+
+        h1 {
+            font-size: 15vw;
+            line-height: 8vw;
+        }
+    }
+
+    .sobreLucas{
+        p {
+            font-size: 5.5vw;
+            width: 89vw;
+            margin-bottom: 2vw;
+        }
+    }
+
+}
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+
+    #mainSobreMi{
+        flex-direction: row;
+        gap: 5vw;
+    }
+
+    .videoNombre{
+         display: flex;
+         flex-direction: column;
+    }
+
+    .video {
+        video {
+            width: 40vw;
+            margin-top: -5vw;
+        }
+    }
+
+    #nombreLucas{
+        z-index: 1;
+        margin: -3.5vw 0vw 0vw 3vw;
+
+        h1 {
+            font-size: 8vw;
+            line-height: 2.2vw;
+        }
+    }
+
+    .sobreLucas {
+        p {
+            width: 45vw;
+            font-size: 2.5vw;
+            text-align: end;
+        }
+    }
+}

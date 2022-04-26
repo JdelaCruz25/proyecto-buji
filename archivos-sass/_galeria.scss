@@ -1,0 +1,64 @@
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        GALERÍA 
+-------------------- */
+#mainGaleria{
+    width: 90vw;
+    margin: 4vw;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+
+    div{
+        justify-self: center;
+
+        img {
+            padding: 0.5vw 0.5vw 7vw 0.5vw;
+            margin: 1vw;
+            border: 1px solid #8c8989cb;
+            box-sizing: border-box;
+            background-color:$colorFuente;
+            width: 28vw; /* TAMAÑO DE LAS FOTOS */
+
+            &:focus {
+                z-index: 1;
+                width: 80vw;
+            }
+        }
+    }
+}  
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+
+    .fotos{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1vw;
+        
+        div{
+            img {
+                padding: 0.5vw 0.5vw 5vw 0.5vw;
+                width: 20vw; /* TAMAÑO DE LAS FOTOS */
+            }
+        }
+    }
+
+    .buji {
+        &:hover {
+            animation: $animacionPulso;
+            animation-duration: $tiempoAnimacion;
+        }
+    }
+
+}

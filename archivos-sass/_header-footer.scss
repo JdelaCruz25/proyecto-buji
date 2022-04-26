@@ -1,0 +1,173 @@
+
+// LE DOY EL MISMO ESTILO AL NAV Y AL FOOTER
+
+nav, footer, .dropdown-menu {
+    font-family: $fontNav;
+    background-image: linear-gradient(to bottom, #161a24, #212635, #363e57);  
+}
+
+.menuHeader, .menuFooter {
+    li {
+        a {
+            padding: 0em 1em;
+            font-weight: 900;
+            color: $colorFuente;
+            text-decoration: none;
+
+            &:hover {
+                color: #798099;
+            }
+        }
+    }
+}
+
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        HEADER 
+-------------------- */
+.menuHeader { /* TAMAÑO LETRA NAV */
+    li {
+        a { 
+            font-size: 5vw;
+        }
+    }
+}
+
+.hamburguesaIcono {
+    color: $colorFuente;
+    font-size: 5vw;
+}
+
+button.navbar-toggler {
+    margin-right: 5vw;
+}
+
+.logo { /* TRABAJO CON EL LOGO */
+    height: 13vw;
+    width: 20vw;
+
+    &:hover {
+        animation: $animacionPulso;
+        animation-duration: $tiempoAnimacion;
+    }
+}
+
+
+/* -------------------- 
+        FOOTER
+-------------------- */
+.menuFooter {
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    li{
+        a{  /* TAMAÑO LETRA FOOTER*/
+            font-size: 3vw;
+        }
+    }
+}
+
+
+/* -------------------- 
+    APTO TABLETS 
+-------------------- */
+@media screen and (min-width: $tamTablets) {
+    
+    /* -------------------- 
+        HEADER 
+    -------------------- */
+    .menuHeader {
+        li {
+            a { /* TAMAÑO LETRA NAV */
+                font-size: 5vw;
+            }
+        }
+    }
+
+    button.navbar-toggler {
+        margin-right: 10vw;
+    }
+}
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+
+    /* -------------------- 
+            HEADER
+    -------------------- */ 
+    .menuHeader {
+        li {
+            padding: 1vw;
+            list-style-type: none;
+        }
+    }
+
+    .menuHeader {
+        li{
+            &:hover {
+                background-color:#161a24; 
+
+                animation: $animacionPulso;
+                animation-duration: $tiempoAnimacion;
+            }
+
+            a { /* TAMAÑO LETRA NAV */
+                font-size: 1.5vw;
+
+                &:hover {
+                    color: $colorFuente;
+                }
+            }
+        }
+    }
+
+    .nav-link:focus, .nav-link:hover {
+        color:$colorFuente;
+    }
+
+    .alineacion{
+        justify-content: end;
+    }
+
+    .logo { /* TRABAJO CON EL LOGO */
+        height: 3.5vw;
+        width: 6vw;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
+    /* -------------------- 
+            FOOTER 
+    -------------------- */ 
+    footer{
+        height: 2vw;
+    }
+
+    .menuFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li {
+            a{
+                font-size: 1vw;
+            }
+        }
+    }
+
+}

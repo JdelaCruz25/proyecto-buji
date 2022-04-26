@@ -1,0 +1,76 @@
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        MÚSICA 
+-------------------- */
+#mainCanciones {
+    width: 80vw;
+    margin: 10vw 0vw;
+    justify-self: center;
+}
+
+.musicaResponsiva, .cajaMusica {
+    padding: 2vw 1vw;
+/*  border: 2px solid; */
+    border-radius: 2vw;
+    background-image: linear-gradient(to right, #212635, #363e57);  
+}
+
+.cicatrices, .sencillos{
+    color: $colorFuente;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.cajaMusica {
+    li {
+        color: $colorFuente;
+        list-style-type: none;
+        margin-top: 5%;
+        font-size: 5vw;
+        font-weight: 530;
+        text-align: center;
+
+        p {
+            margin-bottom: 0rem;
+        }
+
+        audio {
+            width: 50vw;
+        }
+    }
+}
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+
+    #mainCanciones {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-content;
+        gap: 10vw;
+        margin: 3vw;
+    }
+    
+    .cicatrices, .sencillos{
+        padding: 0vw 2vw;
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .cajaMusica {
+        li {
+            font-size: 2vw;
+            font-weight: 530;
+            text-align: center;
+        }
+    }
+}

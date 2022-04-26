@@ -1,0 +1,46 @@
+
+// DEFINO GRID EN TODO EL BODY
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header_"
+        "main_"
+        "footer_";
+
+    /* DEFINO FONDO  */
+    background-image: url('../imagenes/buji/WhatsApp Image 2022-03-13 at 16.32.36.jpeg');
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    font-family: $fontMain;
+            
+}
+
+/* LINKEO GRID A SUS RESPECTIVAS PARTES  */
+header {
+    grid-area: "header_";
+}
+
+main {
+    grid-area: "main_";
+    justify-items: center;
+/*     max-width: 767px; */
+}
+
+footer{
+    grid-area: "footer_";
+}
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+
+    #mainIndex, #mainSobreMi, #mainGaleria, #mainCanciones, #mainContacto {   
+        animation: fadeIn;
+        animation-duration: $tiempoAnimacion;
+    }
+}

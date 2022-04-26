@@ -1,0 +1,126 @@
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        CONTACTO 
+-------------------- */
+#mainContacto{
+    width: 90vw;
+    justify-self: center;
+    margin-bottom: 5vw;
+}
+
+.mensajeContacto {
+    h1 {
+        font-size: 7vw;
+        line-height: 54%;
+        font-family: $fontMain;
+        padding: 10vw 0vw 8vw 18vw;
+        color: #161a24;
+    }
+}
+
+.formulario {
+    font-family: 'Roboto Slab', serif;
+    background-image: linear-gradient(to right, #212635, #363e57);  
+/*  border: 2px solid; */
+    border-radius: 5%;
+    padding: 2%;
+    margin: 2vw;
+    
+    div {
+        padding: 1%;
+    }
+}
+
+.formulario {
+    div {
+        label {
+            display: inline-block;
+            color: $colorFuente;
+            font-size: 4vw;
+            font-weight: 500;
+            padding-top: 2%;
+            padding-bottom: 1%;
+        }
+
+        .ingreso {
+            display: block;
+            width: 80vw;
+            font-size: 3vw;
+            font-weight: 500;
+            font-family: $fontMain;
+            background-color: $colorFuente;
+        }
+    }
+}
+
+.botones {
+    input {
+        width: 25vw;
+        font-size: 3vw;
+        display: inline-block;
+        font-family: $fontMain;
+        margin-top: 3%;
+        border-radius: 0.5em;
+    }
+}
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+  
+     #mainContacto{
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        h1 {
+            padding: 0;
+
+            font-size: 6vw;
+            padding-top: 8vw ;  
+        }
+    }
+
+    .formulario {
+        padding: 2vw;
+        margin: 1vw 0vw 2vw 8vw;
+
+        div {
+            label {
+                padding: 0;
+
+                font-size: 1.8vw;
+            }
+
+            .ingreso {
+                display: block;
+                width: 35vw;
+                font-size: 1.5vw;
+                margin-bottom: 0.5vw;
+            }
+        }
+    }
+
+    .botones {
+        input {
+            width: 13vw;
+            margin-left: 3vw;
+            font-size: 1.5vw;
+            
+            &hover {
+                animation: $animacionPulso;
+                animation-duration: $tiempoAnimacion;
+            }
+        }
+    }
+}

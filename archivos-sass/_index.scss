@@ -1,0 +1,150 @@
+
+/* --------------------
+    MOBILE FIRST
+-------------------- */
+
+
+/* -------------------- 
+        INDEX 
+-------------------- */
+#mainIndex {
+    display: grid;
+}
+
+.titulosH {
+    font-family: $fontMain;
+    display: inline-block;
+    color: #161a24;
+
+    h1 { /* TITULO "LLORO" */
+        font-size: 19.5vw;
+        line-height: 5vw;
+        padding-left: 1vw;
+        margin-top: 5vw;
+    }   
+
+    h2 { /* SUBTITULO "BUJI" */
+        font-size: 8vw;
+    }
+}
+
+.items {
+    margin: 8vw;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+            font-size: 6vw;
+            font-weight: 550;
+            text-align: center;
+        }
+    }
+}
+
+#itemsRedes {
+    width: 0vw; /* esto le quita el sobrante a etiqueta <a> */
+}
+
+.redesItems{
+    width: 50vw;
+    height: 15vw;
+    border-radius: 35em;
+    padding: 1vw;
+    margin-left: 15vw;
+}
+
+.presentacion {
+    justify-self: center;
+    margin-bottom: 10vw;
+
+    iframe { /* VIDEO IFRAME */
+        height: 50vw;
+        width: 90vw;
+    }
+}
+
+/* -------------------- 
+    APTO TABLETS 
+-------------------- */
+@media screen and (min-width: $tamTablets) {
+
+    .items {
+        div {
+            p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .presentacion {
+        justify-self: center;
+        margin-bottom: 5vw;
+    }
+}
+
+
+/* -------------------- 
+    APTO ORDENADORES 
+-------------------- */ 
+@media screen and (min-width: $tamOrdenador){
+  
+    /* -------------------- 
+            INDEX 
+    -------------------- */ 
+    #mainIndex {
+        margin: 1vw 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .titulosH {
+        font-family: $fontMain;
+        display: inline-block;
+        
+        h1 { /* TITULO "LLORO" */
+            margin-top: 1vw;
+            font-size: 10vw;
+            line-height: 5vw;
+        }
+
+        h2 { /* SUBTITULO "BUJI" */
+            font-size: 5vw;
+        }
+    }
+
+    .items {
+        margin: 1vw;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+                font-size: 2.3vw;
+                font-weight: 550;
+                text-align: center;
+            }
+        }
+    }
+
+    .redesItems{
+        width: 24vw;
+        height: 8vw;
+        border-radius: 35em;
+        margin-left: 10vw;
+
+        &:hover{
+            animation: $animacionPulso;
+            animation-duration: $tiempoAnimacion;
+        }
+    }
+
+    .presentacion {
+        iframe { /* VIDEO IFRAME */
+            margin-top: 6vw;
+            height: 28vw;
+            width: 43vw;
+        }
+    }
+}
