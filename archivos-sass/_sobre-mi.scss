@@ -31,11 +31,17 @@
 }
 
 .sobreLucas {
+    background-image: linear-gradient(to right, $color__fondo-medio, $color__fondo-claro);  
+    border-radius: 2vw;
+    padding: 5vw;
+    width: 87vw;
+
     p {
         font-size: 5vw;
         text-align: justify;
-
+        color: $colorFuente;
         @include sizes (90vw, 2vw);
+        width: 77vw;
 
     }
 }
@@ -52,7 +58,7 @@
 
     #nombreLucas {
         z-index: 1;
-        margin: -15.5vw 0vw 8vw 5vw;
+        margin: -17.5vw 0vw 8vw 5vw;
 
         h1 {
             font-size: 15vw;
@@ -61,10 +67,11 @@
     }
 
     .sobreLucas{
+        width: 90vw;
         p {
             font-size: 5.5vw;
-            width: 89vw;
-            margin-bottom: 2vw;
+            width: 80vw;
+            margin-bottom: 0vw;
         }
     }
 
@@ -100,14 +107,16 @@
 
         h1 {
             font-size: 8vw;
-            line-height: 2.2vw;
+            line-height: 4vw;
+            margin-left: -6vw;
         }
     }
 
     .sobreLucas {
+        padding: 5vw;
         p {
-            width: 45vw;
-            font-size: 2.5vw;
+            width: 36vw;
+            font-size: 2vw;
             text-align: end;
         }
     }

@@ -390,11 +390,21 @@ footer {
   line-height: 8vw;
 }
 
+.sobreLucas {
+  background-image: -webkit-gradient(linear, left top, right top, from(#212635), to(#363e57));
+  background-image: linear-gradient(to right, #212635, #363e57);
+  border-radius: 2vw;
+  padding: 5vw;
+  width: 87vw;
+}
+
 .sobreLucas p {
   font-size: 5vw;
   text-align: justify;
+  color: #BFBFBF;
   width: 90vw;
   margin-bottom: 2vw;
+  width: 77vw;
 }
 
 /* -------------------- 
@@ -406,16 +416,19 @@ footer {
   }
   #nombreLucas {
     z-index: 1;
-    margin: -15.5vw 0vw 8vw 5vw;
+    margin: -17.5vw 0vw 8vw 5vw;
   }
   #nombreLucas h1 {
     font-size: 15vw;
     line-height: 8vw;
   }
+  .sobreLucas {
+    width: 90vw;
+  }
   .sobreLucas p {
     font-size: 5.5vw;
-    width: 89vw;
-    margin-bottom: 2vw;
+    width: 80vw;
+    margin-bottom: 0vw;
   }
 }
 
@@ -450,11 +463,15 @@ footer {
   }
   #nombreLucas h1 {
     font-size: 8vw;
-    line-height: 2.2vw;
+    line-height: 4vw;
+    margin-left: -6vw;
+  }
+  .sobreLucas {
+    padding: 5vw;
   }
   .sobreLucas p {
-    width: 45vw;
-    font-size: 2.5vw;
+    width: 36vw;
+    font-size: 2vw;
     text-align: end;
   }
 }
