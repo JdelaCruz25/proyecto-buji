@@ -3,7 +3,7 @@
 
 nav, footer, .dropdown-menu {
     font-family: $fontNav;
-    background-image: linear-gradient(to bottom, #161a24, #212635, #363e57);  
+    background-image: linear-gradient(to bottom, $color__fondo-oscuro, $color__fondo-medio, $color__fondo-claro);  
 }
 
 .menuHeader, .menuFooter {
@@ -15,10 +15,14 @@ nav, footer, .dropdown-menu {
             text-decoration: none;
 
             &:hover {
-                color: #798099;
+                color: $colorSelector;
             }
         }
     }
+}
+
+.nav-link:focus{
+    color:$colorSelector;
 }
 
 
@@ -30,6 +34,7 @@ nav, footer, .dropdown-menu {
 /* -------------------- 
         HEADER 
 -------------------- */
+
 .menuHeader { /* TAMAÑO LETRA NAV */
     li {
         a { 
@@ -116,7 +121,7 @@ button.navbar-toggler {
     .menuHeader {
         li{
             &:hover {
-                background-color:#161a24; 
+                background-color:$color__fondo-oscuro; 
 
                 animation: $animacionPulso;
                 animation-duration: $tiempoAnimacion;
@@ -166,6 +171,10 @@ button.navbar-toggler {
         li {
             a{
                 font-size: 1vw;
+
+                &:hover {
+                    color: $colorSelector;
+                }
             }
         }
     }

@@ -1,7 +1,6 @@
 
 // VARIABLES
 
-
 $animacionPulso: pulse;
 $tiempoAnimacion: 2s;
 
@@ -9,6 +8,28 @@ $fontNav: 'Poppins', sans-serif;
 $fontMain: 'Roboto Slab', serif;
 
 $colorFuente: #BFBFBF;
+$colorSelector: #798099;
+
+$color__fondo-oscuro: #161a24;
+$color__fondo-medio: #212635;
+$color__fondo-claro: #363e57;
 
 $tamTablets: 768px;
 $tamOrdenador: 1024px;
+
+
+
+// MIXIN
+
+@mixin sizes ($width, $mBottom){
+    width: $width;
+    margin-bottom: $mBottom;
+}
+
+
+// EXTEND
+
+.disposicion {
+    display: flex;
+    flex-direction: column;
+}

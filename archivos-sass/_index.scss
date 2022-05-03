@@ -14,7 +14,7 @@
 .titulosH {
     font-family: $fontMain;
     display: inline-block;
-    color: #161a24;
+    color: $color__fondo-oscuro;
 
     h1 { /* TITULO "LLORO" */
         font-size: 19.5vw;
@@ -30,8 +30,7 @@
 
 .items {
     margin: 8vw;
-    display: flex;
-    flex-direction: column;
+    @extend .disposicion;
 
     div {
         p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */

@@ -8,9 +8,8 @@
         CONTACTO 
 -------------------- */
 #mainContacto{
-    width: 90vw;
+    @include sizes (90vw, 5vw);
     justify-self: center;
-    margin-bottom: 5vw;
 }
 
 .mensajeContacto {
@@ -19,13 +18,13 @@
         line-height: 54%;
         font-family: $fontMain;
         padding: 10vw 0vw 8vw 18vw;
-        color: #161a24;
+        color: $color__fondo-oscuro;
     }
 }
 
 .formulario {
     font-family: 'Roboto Slab', serif;
-    background-image: linear-gradient(to right, #212635, #363e57);  
+    background-image: linear-gradient(to right, $color__fondo-medio, $color__fondo-claro);  
 /*  border: 2px solid; */
     border-radius: 5%;
     padding: 2%;
@@ -66,6 +65,11 @@
         font-family: $fontMain;
         margin-top: 3%;
         border-radius: 0.5em;
+
+        
+        &:first-child{
+        background-color: $colorFuente;
+        }
     }
 }
 
@@ -92,20 +96,21 @@
     }
 
     .formulario {
+        width: 50vw;
         padding: 2vw;
-        margin: 1vw 0vw 2vw 8vw;
+        margin: 0.5vw 0vw 2vw 8vw;
 
         div {
             label {
                 padding: 0;
 
-                font-size: 1.8vw;
+                font-size: 1.5vw;
             }
 
             .ingreso {
                 display: block;
-                width: 35vw;
-                font-size: 1.5vw;
+                width: 33.3vw;
+                font-size: 1.3vw;
                 margin-bottom: 0.5vw;
             }
         }
@@ -114,10 +119,10 @@
     .botones {
         input {
             width: 13vw;
-            margin-left: 3vw;
+            margin-left: 2.5vw;
             font-size: 1.5vw;
             
-            &hover {
+            &:hover {
                 animation: $animacionPulso;
                 animation-duration: $tiempoAnimacion;
             }
