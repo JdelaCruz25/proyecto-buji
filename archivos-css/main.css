@@ -370,9 +370,10 @@ footer {
         SOBRE MI 
 -------------------- */
 #mainSobreMi {
-  padding: 3vw;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  padding: 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .video video {
@@ -394,17 +395,28 @@ footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#212635), to(#363e57));
   background-image: linear-gradient(to right, #212635, #363e57);
   border-radius: 2vw;
-  padding: 5vw;
-  width: 87vw;
+  margin-left: 2.5vw;
+  width: 85vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sobreLucas p {
-  font-size: 5vw;
-  text-align: justify;
-  color: #BFBFBF;
   width: 90vw;
   margin-bottom: 2vw;
-  width: 77vw;
+  width: 75vw;
+  margin: 2vw;
+  font-size: 4vw;
+  text-align: justify;
+  color: #BFBFBF;
 }
 
 /* -------------------- 
@@ -416,7 +428,7 @@ footer {
   }
   #nombreLucas {
     z-index: 1;
-    margin: -17.5vw 0vw 8vw 5vw;
+    margin: -15.5vw 0vw 8vw 5vw;
   }
   #nombreLucas h1 {
     font-size: 15vw;
@@ -427,8 +439,8 @@ footer {
   }
   .sobreLucas p {
     font-size: 5.5vw;
-    width: 80vw;
-    margin-bottom: 0vw;
+    width: 85vw;
+    margin: 2vw;
   }
 }
 
@@ -463,16 +475,17 @@ footer {
   }
   #nombreLucas h1 {
     font-size: 8vw;
-    line-height: 4vw;
-    margin-left: -6vw;
+    line-height: 2.2vw;
   }
   .sobreLucas {
-    padding: 5vw;
+    width: 45vw;
+    margin: 0;
   }
   .sobreLucas p {
-    width: 36vw;
+    width: 43.5vw;
     font-size: 2vw;
     text-align: end;
+    padding: 1vw;
   }
 }
 

@@ -8,12 +8,13 @@
         SOBRE MI 
 -------------------- */
 #mainSobreMi{
-    padding: 3vw;
+    padding: 7vw;
     @extend .disposicion;
-    justify-self: center;
+    justify-content: center;
 }
 
 .video {
+
     video {
         width: 90vw;
         height: 55vw;
@@ -33,16 +34,20 @@
 .sobreLucas {
     background-image: linear-gradient(to right, $color__fondo-medio, $color__fondo-claro);  
     border-radius: 2vw;
-    padding: 5vw;
-    width: 87vw;
+    margin-left: 2.5vw;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     p {
-        font-size: 5vw;
+        @include sizes (90vw, 2vw);
+        width: 75vw;
+        margin: 2vw;
+        font-size: 4vw;
+
         text-align: justify;
         color: $colorFuente;
-        @include sizes (90vw, 2vw);
-        width: 77vw;
-
     }
 }
 
@@ -58,7 +63,7 @@
 
     #nombreLucas {
         z-index: 1;
-        margin: -17.5vw 0vw 8vw 5vw;
+        margin: -15.5vw 0vw 8vw 5vw;
 
         h1 {
             font-size: 15vw;
@@ -68,10 +73,11 @@
 
     .sobreLucas{
         width: 90vw;
+
         p {
             font-size: 5.5vw;
-            width: 80vw;
-            margin-bottom: 0vw;
+            width: 85vw;
+            margin: 2vw;
         }
     }
 
@@ -107,17 +113,19 @@
 
         h1 {
             font-size: 8vw;
-            line-height: 4vw;
-            margin-left: -6vw;
+            line-height: 2.2vw;
         }
     }
 
     .sobreLucas {
-        padding: 5vw;
+        width: 45vw;
+        margin: 0;
+
         p {
-            width: 36vw;
+            width: 43.5vw;
             font-size: 2vw;
             text-align: end;
+            padding: 1vw;
         }
     }
 }
