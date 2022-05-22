@@ -353,7 +353,7 @@ footer {
 }
 
 .video video {
-  width: 80vw;
+  width: 85vw;
   height: 55vw;
 }
 
@@ -372,7 +372,7 @@ footer {
   background-image: linear-gradient(to right, #212635, #363e57);
   border-radius: 2vw;
   margin-left: 0.5vw;
-  width: 80vw;
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
