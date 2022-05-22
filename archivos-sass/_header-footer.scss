@@ -35,7 +35,7 @@ nav, footer, .dropdown-menu {
         HEADER 
 -------------------- */
 
-.menuHeader { /* TAMAÑO LETRA NAV */
+.menuHeader { 
     li {
         a { 
             font-size: 5vw;
@@ -52,7 +52,7 @@ button.navbar-toggler {
     margin-right: 5vw;
 }
 
-.logo { /* TRABAJO CON EL LOGO */
+.logo {
     height: 13vw;
     width: 20vw;
 
@@ -74,7 +74,7 @@ button.navbar-toggler {
     justify-items: center;
 
     li{
-        a{  /* TAMAÑO LETRA FOOTER*/
+        a{
             font-size: 3vw;
         }
     }
@@ -91,7 +91,7 @@ button.navbar-toggler {
     -------------------- */
     .menuHeader {
         li {
-            a { /* TAMAÑO LETRA NAV */
+            a { 
                 font-size: 5vw;
             }
         }
@@ -127,7 +127,7 @@ button.navbar-toggler {
                 animation-duration: $tiempoAnimacion;
             }
 
-            a { /* TAMAÑO LETRA NAV */
+            a {
                 font-size: 1.5vw;
 
                 &:hover {
@@ -145,7 +145,7 @@ button.navbar-toggler {
         justify-content: end;
     }
 
-    .logo { /* TRABAJO CON EL LOGO */
+    .logo {
         height: 3.5vw;
         width: 6vw;
     }

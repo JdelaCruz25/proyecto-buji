@@ -8,7 +8,7 @@ body {
         "main_"
         "footer_";
 
-    /* DEFINO FONDO  */
+    // DEFINO FONDO
     background-image: url('../imagenes/buji/WhatsApp Image 2022-03-13 at 16.32.36.jpeg');
     background-attachment: fixed;
     background-size:cover;
@@ -18,7 +18,7 @@ body {
             
 }
 
-/* LINKEO GRID A SUS RESPECTIVAS PARTES  */
+// LINKEO GRID A SUS RESPECTIVAS PARTES
 header {
     grid-area: "header_";
 }

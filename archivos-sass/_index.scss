@@ -16,14 +16,14 @@
     display: inline-block;
     color: $color__fondo-oscuro;
 
-    h1 { /* TITULO "LLORO" */
+    h1 { // TITULO "LLORO"
         font-size: 19.5vw;
         line-height: 5vw;
         padding-left: 1vw;
         margin-top: 5vw;
     }   
 
-    h2 { /* SUBTITULO "BUJI" */
+    h2 { // SUBTITULO "BUJI"
         font-size: 8vw;
     }
 }
@@ -33,7 +33,7 @@
     @extend .disposicion;
 
     div {
-        p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+        p { // PARRAFO "ULTIMO TEMA DISPONIBLE"
             font-size: 6vw;
             font-weight: 550;
             text-align: center;
@@ -42,7 +42,7 @@
 }
 
 #itemsRedes {
-    width: 0vw; /* esto le quita el sobrante a etiqueta <a> */
+    width: 0vw; // esto le quita el sobrante a etiqueta <a>
 }
 
 .redesItems{
@@ -57,7 +57,7 @@
     justify-self: center;
     margin-bottom: 10vw;
 
-    iframe { /* VIDEO IFRAME */
+    iframe {
         height: 50vw;
         width: 90vw;
     }
@@ -70,7 +70,7 @@
 
     .items {
         div {
-            p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+            p { // PARRAFO "ULTIMO TEMA DISPONIBLE"
                 font-size: 5vw;
             }
         }
@@ -102,13 +102,13 @@
         font-family: $fontMain;
         display: inline-block;
         
-        h1 { /* TITULO "LLORO" */
+        h1 { // TITULO "LLORO"
             margin-top: 1vw;
             font-size: 10vw;
             line-height: 5vw;
         }
 
-        h2 { /* SUBTITULO "BUJI" */
+        h2 { // SUBTITULO "BUJI"
             font-size: 5vw;
         }
     }
@@ -119,7 +119,7 @@
         flex-direction: column;
 
         div {
-            p { /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
+            p { // PARRAFO "ULTIMO TEMA DISPONIBLE"
                 font-size: 2.3vw;
                 font-weight: 550;
                 text-align: center;
@@ -140,7 +140,7 @@
     }
 
     .presentacion {
-        iframe { /* VIDEO IFRAME */
+        iframe {
             margin-top: 6vw;
             height: 28vw;
             width: 43vw;
