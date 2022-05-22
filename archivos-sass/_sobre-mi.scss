@@ -61,6 +61,14 @@
         padding: 3vw;
     }
 
+    .video {
+
+        video {
+            width: 90vw;
+            height: 55vw;
+        }
+    }
+
     #nombreLucas {
         z-index: 1;
         margin: -2vw 0vw 8vw 5vw;
@@ -72,7 +80,7 @@
     }
 
     .sobreLucas{
-        width: 90vw;
+        width: 95vw;
 
         p {
             font-size: 5.5vw;

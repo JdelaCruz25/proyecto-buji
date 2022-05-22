@@ -402,6 +402,10 @@ footer {
   #mainSobreMi {
     padding: 3vw;
   }
+  .video video {
+    width: 90vw;
+    height: 55vw;
+  }
   #nombreLucas {
     z-index: 1;
     margin: -2vw 0vw 8vw 5vw;
@@ -411,7 +415,7 @@ footer {
     line-height: 8vw;
   }
   .sobreLucas {
-    width: 90vw;
+    width: 95vw;
   }
   .sobreLucas p {
     font-size: 5.5vw;
