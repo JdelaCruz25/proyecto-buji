@@ -43,10 +43,6 @@ nav, footer, .dropdown-menu {
 /* -------------------- 
         HEADER 
 -------------------- */
-.menuHeader {
-  /* TAMAÑO LETRA NAV */
-}
-
 .menuHeader li a {
   font-size: 5vw;
 }
@@ -57,11 +53,10 @@ nav, footer, .dropdown-menu {
 }
 
 button.navbar-toggler {
-  margin-right: 5vw;
+  margin-right: 2vw;
 }
 
 .logo {
-  /* TRABAJO CON EL LOGO */
   height: 13vw;
   width: 20vw;
 }
@@ -86,7 +81,6 @@ button.navbar-toggler {
 }
 
 .menuFooter li a {
-  /* TAMAÑO LETRA FOOTER*/
   font-size: 3vw;
 }
 
@@ -98,11 +92,7 @@ button.navbar-toggler {
         HEADER 
     -------------------- */
   .menuHeader li a {
-    /* TAMAÑO LETRA NAV */
     font-size: 5vw;
-  }
-  button.navbar-toggler {
-    margin-right: 10vw;
   }
 }
 
@@ -125,7 +115,6 @@ button.navbar-toggler {
             animation-duration: 2s;
   }
   .menuHeader li a {
-    /* TAMAÑO LETRA NAV */
     font-size: 1.5vw;
   }
   .menuHeader li a:hover {
@@ -140,7 +129,6 @@ button.navbar-toggler {
             justify-content: end;
   }
   .logo {
-    /* TRABAJO CON EL LOGO */
     height: 3.5vw;
     width: 6vw;
   }
@@ -178,7 +166,6 @@ body {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "header_" "main_" "footer_";
-  /* DEFINO FONDO  */
   background-image: url("../imagenes/buji/WhatsApp Image 2022-03-13 at 16.32.36.jpeg");
   background-attachment: fixed;
   background-size: cover;
@@ -186,7 +173,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-/* LINKEO GRID A SUS RESPECTIVAS PARTES  */
 header {
   grid-area: "header_";
 }
@@ -230,7 +216,6 @@ footer {
 }
 
 .titulosH h1 {
-  /* TITULO "LLORO" */
   font-size: 19.5vw;
   line-height: 5vw;
   padding-left: 1vw;
@@ -238,7 +223,6 @@ footer {
 }
 
 .titulosH h2 {
-  /* SUBTITULO "BUJI" */
   font-size: 8vw;
 }
 
@@ -247,7 +231,6 @@ footer {
 }
 
 .items div p {
-  /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
   font-size: 6vw;
   font-weight: 550;
   text-align: center;
@@ -255,7 +238,6 @@ footer {
 
 #itemsRedes {
   width: 0vw;
-  /* esto le quita el sobrante a etiqueta <a> */
 }
 
 .redesItems {
@@ -273,7 +255,6 @@ footer {
 }
 
 .presentacion iframe {
-  /* VIDEO IFRAME */
   height: 50vw;
   width: 90vw;
 }
@@ -283,7 +264,6 @@ footer {
 -------------------- */
 @media screen and (min-width: 768px) {
   .items div p {
-    /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
     font-size: 5vw;
   }
   .presentacion {
@@ -318,13 +298,11 @@ footer {
     display: inline-block;
   }
   .titulosH h1 {
-    /* TITULO "LLORO" */
     margin-top: 1vw;
     font-size: 10vw;
     line-height: 5vw;
   }
   .titulosH h2 {
-    /* SUBTITULO "BUJI" */
     font-size: 5vw;
   }
   .items {
@@ -338,7 +316,6 @@ footer {
             flex-direction: column;
   }
   .items div p {
-    /* PARRAFO "ULTIMO TEMA DISPONIBLE" */
     font-size: 2.3vw;
     font-weight: 550;
     text-align: center;
@@ -356,7 +333,6 @@ footer {
             animation-duration: 2s;
   }
   .presentacion iframe {
-    /* VIDEO IFRAME */
     margin-top: 6vw;
     height: 28vw;
     width: 43vw;
@@ -377,7 +353,7 @@ footer {
 }
 
 .video video {
-  width: 90vw;
+  width: 80vw;
   height: 55vw;
 }
 
@@ -395,8 +371,8 @@ footer {
   background-image: -webkit-gradient(linear, left top, right top, from(#212635), to(#363e57));
   background-image: linear-gradient(to right, #212635, #363e57);
   border-radius: 2vw;
-  margin-left: 2.5vw;
-  width: 85vw;
+  margin-left: 0.5vw;
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +404,7 @@ footer {
   }
   #nombreLucas {
     z-index: 1;
-    margin: -15.5vw 0vw 8vw 5vw;
+    margin: -2vw 0vw 8vw 5vw;
   }
   #nombreLucas h1 {
     font-size: 15vw;
@@ -504,7 +480,6 @@ footer {
 
 .musicaResponsiva, .cajaMusica {
   padding: 2vw 1vw;
-  /*  border: 2px solid; */
   border-radius: 2vw;
   background-image: -webkit-gradient(linear, left top, right top, from(#212635), to(#363e57));
   background-image: linear-gradient(to right, #212635, #363e57);
@@ -610,7 +585,6 @@ footer {
           box-sizing: border-box;
   background-color: #BFBFBF;
   width: 28vw;
-  /* TAMAÑO DE LAS FOTOS */
 }
 
 /* -------------------- 
@@ -625,13 +599,12 @@ footer {
   .fotos div img {
     padding: 0.5vw 0.5vw 5vw 0.5vw;
     width: 20vw;
-    /* TAMAÑO DE LAS FOTOS */
   }
   .buji:hover {
     -webkit-transition: all 1s;
     transition: all 1s;
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -660,7 +633,6 @@ footer {
   font-family: 'Roboto Slab', serif;
   background-image: -webkit-gradient(linear, left top, right top, from(#212635), to(#363e57));
   background-image: linear-gradient(to right, #212635, #363e57);
-  /*  border: 2px solid; */
   border-radius: 5%;
   padding: 2%;
   margin: 2vw;
@@ -697,7 +669,7 @@ footer {
   border-radius: 0.5em;
 }
 
-.botones input:first-child {
+.botones input:nth-child(2) {
   background-color: #BFBFBF;
 }
 
@@ -728,7 +700,7 @@ footer {
   }
   .formulario {
     width: 50vw;
-    padding: 2vw;
+    padding: 1.9vw;
     margin: 0.5vw 0vw 2vw 8vw;
   }
   .formulario div label {
