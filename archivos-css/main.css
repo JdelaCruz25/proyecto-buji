@@ -403,7 +403,7 @@ footer {
     padding: 3vw;
   }
   .video video {
-    width: 90vw;
+    width: 95vw;
     height: 55vw;
   }
   #nombreLucas {
@@ -639,7 +639,7 @@ footer {
   background-image: linear-gradient(to right, #212635, #363e57);
   border-radius: 5%;
   padding: 2%;
-  margin: 0vw 2vw 20vw 2vw;
+  margin: 0vw 2vw 10vw 2vw;
 }
 
 .formulario div {
