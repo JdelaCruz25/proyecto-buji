@@ -639,7 +639,7 @@ footer {
   background-image: linear-gradient(to right, #212635, #363e57);
   border-radius: 5%;
   padding: 2%;
-  margin: 2vw;
+  margin: 0vw 2vw 20vw 2vw;
 }
 
 .formulario div {
